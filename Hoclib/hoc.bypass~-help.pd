@@ -1,0 +1,21 @@
+#N canvas 166 324 450 300 10;
+#X obj 55 103 hoc.bypass~;
+#X text 8 -1 redirige le signal à gauche ou a droite selon l'inlet
+de droite;
+#X obj 57 47 noise~;
+#X obj 118 80 tgl 15 0 empty empty on/off 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 56 129 lopp~ 300;
+#X obj 55 166 dac~;
+#X msg 198 68 \; pd dsp 1;
+#X obj 198 46 loadbang;
+#X obj 56 74 *~ 0.2;
+#X connect 0 0 4 0;
+#X connect 0 1 5 0;
+#X connect 0 1 5 1;
+#X connect 2 0 8 0;
+#X connect 3 0 0 1;
+#X connect 4 0 5 0;
+#X connect 4 0 5 1;
+#X connect 7 0 6 0;
+#X connect 8 0 0 0;

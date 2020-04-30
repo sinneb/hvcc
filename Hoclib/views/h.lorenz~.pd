@@ -1,0 +1,10 @@
+#N canvas 0 29 450 300 10;
+#X obj 106 138 hoc.lorenz~;
+#X obj 102 59 inlet;
+#X obj 105 113 hsl 70 10 0 100 0 0 empty empty variation 0 5 1 10 -261234
+-258113 -86277 0 1;
+#X obj 105 171 outlet~;
+#X connect 0 0 3 0;
+#X connect 1 0 2 0;
+#X connect 2 0 0 0;
+#X coords 0 -1 1 1 80 25 1 100 100;

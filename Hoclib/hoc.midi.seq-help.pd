@@ -1,0 +1,33 @@
+#N canvas 512 349 450 300 10;
+#X obj 49 183 hoc.sampler~;
+#X obj 48 211 h.output~;
+#X obj 48 90 hoc.midi.seq;
+#X floatatom 48 23 5 0 0 0 BPM bpm -, f 5;
+#X floatatom 49 42 5 0 0 0 pitch pitch -, f 5;
+#X obj 142 180 loadbang;
+#X obj 142 200 del 10;
+#X obj 67 126 print note;
+#X msg 335 81 \; bpm 120 \; pitch 12 \;;
+#X obj 335 58 loadbang;
+#X obj 89 30 vsl 10 40 0 1 0 0 empty empty duration 0 -9 0 10 -262144
+-1 -1 0 1;
+#X obj 105 40 vsl 10 40 0 1 0 0 empty empty random_tempo 0 -9 0 10
+-262144 -1 -1 0 1;
+#X obj 129 48 hradio 15 1 0 4 empty empty mode 0 -8 0 10 -262144 -1
+-1 0;
+#X obj 129 68 + 1;
+#X msg 142 221 ./samples/pianoC3.wav;
+#X connect 0 0 1 0;
+#X connect 0 0 1 1;
+#X connect 2 0 0 0;
+#X connect 2 0 7 0;
+#X connect 3 0 2 0;
+#X connect 4 0 2 1;
+#X connect 5 0 6 0;
+#X connect 6 0 14 0;
+#X connect 9 0 8 0;
+#X connect 10 0 2 2;
+#X connect 11 0 2 3;
+#X connect 12 0 13 0;
+#X connect 13 0 2 4;
+#X connect 14 0 0 1;

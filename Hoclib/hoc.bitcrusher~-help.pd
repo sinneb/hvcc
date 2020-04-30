@@ -1,0 +1,20 @@
+#N canvas 497 305 450 300 10;
+#X obj 11 31 bng 15 250 50 0 empty empty déclenche-moi! 17 7 0 10
+-262144 -1 -1;
+#X obj 11 51 hoc.play~ samples/bigbuckbunny.wav;
+#X msg 250 33 \; pd dsp 1;
+#X obj 250 12 loadbang;
+#X obj 10 148 dac~;
+#X obj 10 114 hoc.bitcrusher~ 8 22050;
+#X text 9 -12 Bitcrusher;
+#X text 223 106 inlet1 : signal;
+#X text 223 116 inlet2/arg1 : bit depth;
+#X text 223 127 inlet3/arg2 : sample rate;
+#X obj 11 9 loadbang;
+#X connect 0 0 1 0;
+#X connect 1 0 5 0;
+#X connect 1 1 0 0;
+#X connect 3 0 2 0;
+#X connect 5 0 4 0;
+#X connect 5 0 4 1;
+#X connect 10 0 0 0;

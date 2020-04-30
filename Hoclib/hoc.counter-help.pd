@@ -1,0 +1,17 @@
+#N canvas 367 264 489 183 10;
+#X floatatom 19 86 5 0 0 0 - - -, f 5;
+#X obj 19 35 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X text 13 4 Equivalent du [counter] de cyclone;
+#X text 16 109 sans argument : compteur infinit;
+#X text 16 124 avec argument : compte jusqu'à la valeur puis recommence
+à 0;
+#X floatatom 126 86 5 0 0 0 - - -, f 5;
+#X obj 126 35 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 126 58 hoc.counter 3;
+#X obj 19 58 hoc.counter;
+#X connect 1 0 8 0;
+#X connect 6 0 7 0;
+#X connect 7 0 5 0;
+#X connect 8 0 0 0;

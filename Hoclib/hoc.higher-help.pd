@@ -1,0 +1,10 @@
+#N canvas 466 393 271 153 10;
+#X text 7 7 Renvoie la valeur maximale;
+#X floatatom 12 83 5 0 0 0 - - -, f 5;
+#X floatatom 12 34 5 0 0 0 - - -, f 5;
+#X obj 79 33 bng 15 250 50 0 empty empty reset 17 7 0 10 -262144 -1
+-1;
+#X obj 12 57 hoc.higher;
+#X connect 2 0 4 0;
+#X connect 3 0 4 1;
+#X connect 4 0 1 0;

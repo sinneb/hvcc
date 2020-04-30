@@ -1,0 +1,14 @@
+#N canvas 315 366 450 300 10;
+#X text 184 101 arg1: window name (ici mywindow);
+#X obj 171 200 tabread mywindow;
+#X obj 19 118 hoc.window.hann mywindow;
+#X obj 22 69 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 4500 1;
+#X text 184 120 inlet1: width 0-1;
+#X text 12 9 hoc.window.hann : 512 hanning window creation;
+#X obj 174 176 hsl 128 15 0 512 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X floatatom 171 222 7 0 0 0 - - -, f 7;
+#X connect 1 0 7 0;
+#X connect 3 0 2 0;
+#X connect 6 0 1 0;

@@ -1,0 +1,10 @@
+#N canvas 81 51 450 300 10;
+#X obj 102 71 ctlin \$1 \$2;
+#X obj 104 114 hsl 100 10 0 127 0 0 empty empty empty 0 5 1 10 -191407
+-1 -162280 9900 1;
+#X obj 103 165 outlet;
+#X obj 103 143 hoc.scale 0 127 \$3 \$4 \$5;
+#X connect 0 0 1 0;
+#X connect 1 0 3 0;
+#X connect 3 0 2 0;
+#X coords 0 -1 1 1 110 25 1 100 100;

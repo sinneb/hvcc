@@ -1,0 +1,16 @@
+#N canvas 599 383 574 337 10;
+#X obj 28 234 dac~;
+#X obj 28 202 *~ 0.3;
+#X obj 73 152 * 2000;
+#X obj 29 180 hoc.fm~ 80;
+#X text 11 5 LFO aléatoire;
+#X text 264 33 inlet1 : reset (bang);
+#X text 263 47 inlet2/arg1 : frequence;
+#X text 263 61 inlet3/arg2 : quadratique magnitude;
+#X text 264 74 inlet4/arg3 : tremblotement;
+#X obj 73 119 hoc.fluct.pow 0.8 2 0.1;
+#X connect 1 0 0 0;
+#X connect 1 0 0 1;
+#X connect 2 0 3 2;
+#X connect 3 0 1 0;
+#X connect 9 0 2 0;

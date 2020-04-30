@@ -1,0 +1,9 @@
+finir transformer hoc.fluctuation.pd en hoc.random.pd et h.random.pd
+Faire un fichier META pour la hoclib : tous les objets hoc.xxx catégorisés avec une petite description
+Faire un Arduino2PD avec juste le serial (avec ASCII2number...) 
+Ameliorer le filtre lowpassres
+reverser inverse le sample tous les n milisecondes
+améliorer shuffling
+reverbe(s) : réseaux de retards, pvoc...
+Un harmoniser... quel modèle..?
+faire un hoc.meta avec un classement des objets par type

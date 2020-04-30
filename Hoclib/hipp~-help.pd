@@ -1,0 +1,13 @@
+#N canvas 214 269 450 300 10;
+#X obj 14 51 noise~;
+#X obj 15 107 dac~;
+#X msg 141 64 \; pd dsp 1;
+#X obj 141 43 loadbang;
+#X text 93 103 inlet1: signal;
+#X text 93 115 inlet2/arg1: frequence;
+#X text 9 4 2nd ordre hi pass;
+#X obj 15 75 hipp~ 2000;
+#X connect 0 0 7 0;
+#X connect 3 0 2 0;
+#X connect 7 0 1 0;
+#X connect 7 0 1 1;

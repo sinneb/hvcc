@@ -1,0 +1,23 @@
+#N canvas 499 187 450 300 10;
+#X obj 208 203 outlet;
+#X obj 106 117 hsl 70 10 0.1 10 0 0 empty empty empty -2 -8 0 10 -262130
+-257985 -83269 0 1;
+#X obj 103 50 loadbang;
+#X obj 187 148 hoc.cloud;
+#X obj 233 88 inlet;
+#X obj 83 236 /;
+#X msg 83 204 1;
+#X obj 82 181 t b f;
+#X obj 85 258 * 1000;
+#X msg 103 71 1;
+#X connect 1 0 7 0;
+#X connect 2 0 9 0;
+#X connect 3 0 0 0;
+#X connect 4 0 3 0;
+#X connect 5 0 8 0;
+#X connect 6 0 5 0;
+#X connect 7 0 6 0;
+#X connect 7 1 5 1;
+#X connect 8 0 3 0;
+#X connect 9 0 1 0;
+#X coords 0 -1 1 1 85 30 1 100 100;

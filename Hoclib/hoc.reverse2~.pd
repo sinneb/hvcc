@@ -1,0 +1,26 @@
+#N canvas 254 82 565 738 10;
+#X obj 25 23 hoc.play~ samples/bigbuckbunny.wav;
+#X obj 259 134 table \$0-t 44100;
+#X obj 25 2 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 24 123 tabwrite~ \$0-t 44100;
+#X obj 149 298 dac~;
+#X obj 64 74 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 260 274 tabread4~ \$0-t;
+#X obj 64 93 metro;
+#X floatatom 167 90 5 0 0 0 - - -;
+#X obj 147 245 tabplay~ \$0-t;
+#X obj 147 226 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 260 231 phasor~ 1;
+#X obj 260 253 *~ 300;
+#X connect 0 0 3 0;
+#X connect 0 1 2 0;
+#X connect 2 0 0 0;
+#X connect 5 0 7 0;
+#X connect 7 0 3 0;
+#X connect 8 0 7 1;
+#X connect 10 0 9 0;
+#X connect 11 0 12 0;
+#X connect 12 0 6 0;

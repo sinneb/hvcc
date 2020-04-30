@@ -1,0 +1,23 @@
+#N canvas 656 335 450 300 10;
+#X text 252 111 inlet1: audio in;
+#X text 253 125 inlet2/arg1 : cutoff 0/1;
+#X text 253 136 inlet3/arg2 : res 0/1;
+#X obj 50 59 hoc.play~ samples/bigbuckbunny.wav;
+#X obj 49 18 loadbang;
+#X msg 335 52 \; pd dsp 1;
+#X obj 335 31 loadbang;
+#X obj 50 40 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 52 176 dac~;
+#X obj 53 139 hoc.peakfilter~ 0.5 0.1;
+#X floatatom 119 111 5 0 0 0 - - -;
+#X floatatom 188 113 5 0 0 0 - - -;
+#X connect 3 0 9 0;
+#X connect 3 1 7 0;
+#X connect 4 0 3 0;
+#X connect 6 0 5 0;
+#X connect 7 0 3 0;
+#X connect 9 0 8 0;
+#X connect 9 0 8 1;
+#X connect 10 0 9 1;
+#X connect 11 0 9 2;

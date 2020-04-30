@@ -1,0 +1,25 @@
+#N canvas 649 258 498 364 10;
+#X text 220 65 inlet2 / arg1 : attack en ms;
+#X text 220 54 inlet1 : trigger 0/1;
+#X text 220 76 inlet3 / arg2 : decay en ms;
+#X text 220 87 inlet4 / arg3 : sustain 0 - 1;
+#X text 220 98 inlet5 / arg4 : release en ms;
+#X obj 94 54 metro 1000;
+#X obj 94 27 loadbang;
+#X obj 94 99 tgl 30 0 empty empty empty 17 7 0 10 -261234 -1 -1 0 1
+;
+#X obj 30 55 metro 3;
+#X msg 30 75 1;
+#X obj 30 166 *;
+#X obj 96 161 vsl 30 128 0.01 1 0 0 empty empty empty 0 -9 0 10 -261234
+-1 -1 3079 1;
+#X obj 48 135 hoc.adsr 40 120 0.5 200;
+#X text 10 5 Enveloppe ADSR;
+#X connect 5 0 7 0;
+#X connect 6 0 5 0;
+#X connect 6 0 8 0;
+#X connect 7 0 12 0;
+#X connect 8 0 9 0;
+#X connect 9 0 10 0;
+#X connect 10 0 11 0;
+#X connect 12 0 10 1;

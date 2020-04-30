@@ -1,0 +1,25 @@
+#N canvas 0 29 680 314 10;
+#X obj 16 245 dac~;
+#X floatatom 91 150 5 0 0 0 - - -, f 5;
+#X obj 91 169 / 100;
+#X obj 16 54 loadbang;
+#X obj 88 64 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 16 89 hoc.play~ samples/voice.wav;
+#X obj 16 192 hoc.disto.cheby~ 0.5 4;
+#X msg 303 131 \; pd dsp 1;
+#X obj 303 105 loadbang;
+#X text 3 6 Distortion à base de polynomes de chebyshev ;
+#X text 245 179 inlet1/arg1 : distortion;
+#X text 245 191 inlet1/arg1 : ordre du polynome 2 - 6 (int). Defaut:
+4;
+#X text 4 18 Basé sur le E05 du manuel;
+#X connect 1 0 2 0;
+#X connect 2 0 6 1;
+#X connect 3 0 5 0;
+#X connect 4 0 5 0;
+#X connect 5 0 6 0;
+#X connect 5 1 4 0;
+#X connect 6 0 0 0;
+#X connect 6 0 0 1;
+#X connect 8 0 7 0;

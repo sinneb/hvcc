@@ -1,0 +1,6 @@
+#N canvas 263 194 679 342 10;
+#X obj 82 124 hoc.tape~;
+#X text 229 115 outlet1 : sound;
+#X text 229 128 outlet2 : number of samples;
+#X text 229 67 inlet1 : tape position (0->1);
+#X text 229 81 inlet2 : load sound;

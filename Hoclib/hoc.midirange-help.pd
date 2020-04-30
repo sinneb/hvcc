@@ -1,0 +1,12 @@
+#N canvas 350 267 694 431 10;
+#X text 4 3 Selectionne une plage de note midi;
+#X text 135 25 inlet1/arg1 : minimum midi note;
+#X text 136 37 inlet2/arg2 : maximum midi note;
+#X obj 7 28 hoc.midirange 40 60;
+#X text 9 84 note;
+#X text 42 84 midi;
+#X text 10 104 C3 : 48 : 130.81;
+#X text 10 115 C4 : 60 : 261.63;
+#X text 10 125 A4 : 69 : 440;
+#X text 74 84 frequence;
+#X text 136 47 arg3 : canal midi;

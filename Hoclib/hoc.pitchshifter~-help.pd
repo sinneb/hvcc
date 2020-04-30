@@ -1,0 +1,19 @@
+#N canvas 252 313 450 300 10;
+#X msg 244 77 \; pd dsp 1;
+#X obj 244 56 loadbang;
+#X obj 13 69 hoc.play~ samples/bigbuckbunny.wav;
+#X obj 14 32 loadbang;
+#X obj 14 52 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X text 11 6 pitchshifter abstraction basé sur l'exemple G09;
+#X obj 13 173 dac~;
+#X obj 14 144 hoc.pitchshifter~ 5;
+#X text 171 134 inlet1 : signal;
+#X text 171 145 inlet2/arg1 : transpo en demi ton;
+#X connect 1 0 0 0;
+#X connect 2 0 7 0;
+#X connect 2 1 4 0;
+#X connect 3 0 4 0;
+#X connect 4 0 2 0;
+#X connect 7 0 6 0;
+#X connect 7 0 6 1;

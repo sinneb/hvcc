@@ -1,0 +1,16 @@
+#N canvas 42 227 450 300 10;
+#X obj 208 175 line;
+#X obj 208 85 inlet;
+#X obj 208 203 outlet;
+#X obj 106 117 hsl 70 10 0 3000 0 0 empty empty empty -2 -8 0 10 -261682
+-260097 -86853 450 1;
+#X obj 208 153 pack f f;
+#X obj 103 50 loadbang;
+#X msg 103 72 50;
+#X connect 0 0 2 0;
+#X connect 1 0 4 0;
+#X connect 3 0 4 1;
+#X connect 4 0 0 0;
+#X connect 5 0 6 0;
+#X connect 6 0 3 0;
+#X coords 0 -1 1 1 85 30 1 100 100;

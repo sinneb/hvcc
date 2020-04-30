@@ -1,0 +1,15 @@
+#N canvas 102 79 450 300 10;
+#X text 7 7 Step gate;
+#X obj 21 191 dac~;
+#X obj 20 159 *~ 0.3;
+#X obj 21 130 hoc.gator8~ 1 1 0 1 1 0 1 0 120;
+#X text 213 53 inlet/arg(1-8) : steps on/off;
+#X text 212 66 inlet9/arg9 : period (ms);
+#X obj 20 102 hoc.fm~ 140;
+#X msg 301 165 \; pd dsp 1;
+#X obj 301 143 loadbang;
+#X connect 2 0 1 0;
+#X connect 2 0 1 1;
+#X connect 3 0 2 0;
+#X connect 6 0 3 0;
+#X connect 8 0 7 0;

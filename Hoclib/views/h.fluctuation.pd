@@ -1,0 +1,28 @@
+#N canvas 226 328 450 300 10;
+#X obj 105 115 hsl 64 10 0.01 15 1 0 empty empty Frequence 3 4 0 10
+-262130 -257985 -83269 0 1;
+#X obj 105 125 hsl 64 10 0 40 0 0 empty empty Depth 3 4 0 10 -262130
+-257985 -83269 0 1;
+#X obj 101 135 hradio 10 1 0 3 empty empty empty 0 -8 0 10 -262130
+-257985 -83269 1;
+#X obj 242 156 + 1;
+#X obj 100 207 outlet;
+#X symbolatom 104 145 7 0 0 0 - - -, f 7;
+#X obj 269 92 sel 0 1 2;
+#X msg 269 115 set step;
+#X msg 286 136 set walk;
+#X msg 309 157 set interpol;
+#X obj 100 185 hoc.fluctuation;
+#X connect 0 0 10 0;
+#X connect 1 0 10 1;
+#X connect 2 0 3 0;
+#X connect 2 0 6 0;
+#X connect 3 0 10 2;
+#X connect 6 0 7 0;
+#X connect 6 1 8 0;
+#X connect 6 2 9 0;
+#X connect 7 0 5 0;
+#X connect 8 0 5 0;
+#X connect 9 0 5 0;
+#X connect 10 0 4 0;
+#X coords 0 -1 1 1 85 60 1 100 100;

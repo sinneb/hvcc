@@ -1,0 +1,23 @@
+#N canvas 286 300 586 317 10;
+#X obj 18 243 h.output~;
+#X floatatom 66 160 5 1 120 2 delay - -, f 5;
+#X floatatom 114 159 5 0 1 2 depth - -, f 5;
+#X floatatom 162 158 5 0 1 2 feedback - -, f 5;
+#X obj 17 45 loadbang;
+#X obj 17 68 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X text 228 161 Inlet2/arg1 : delay en ms (1-120);
+#X text 228 176 Inlet3/arg2 : depth (0-1);
+#X obj 18 185 hoc.chorus~ 30 0.2 0.5;
+#X text 227 190 Inlet4/arg3 : feedback (0-1);
+#X obj 17 89 hoc.play~ samples/pianoC3.wav;
+#X text 16 8 Simple Chorus (4 stages);
+#X connect 1 0 8 1;
+#X connect 2 0 8 2;
+#X connect 3 0 8 3;
+#X connect 4 0 5 0;
+#X connect 5 0 10 0;
+#X connect 8 0 0 0;
+#X connect 8 0 0 1;
+#X connect 10 0 8 0;
+#X connect 10 1 5 0;

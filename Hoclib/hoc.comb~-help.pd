@@ -1,0 +1,16 @@
+#N canvas 524 303 450 300 10;
+#X obj 21 206 h.output~;
+#X obj 20 81 hoc.play~ samples/bigbuckbunny.wav;
+#X obj 20 61 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 20 38 loadbang;
+#X obj 21 153 hoc.comb~ 50 1;
+#X text 17 7 Filtre en peigne;
+#X text 229 150 arg1/inlet2 : freq en hz;
+#X text 230 163 arg2/inlet3 : depth 0-1;
+#X connect 1 0 4 0;
+#X connect 1 1 2 0;
+#X connect 2 0 1 0;
+#X connect 3 0 2 0;
+#X connect 4 0 0 0;
+#X connect 4 0 0 1;

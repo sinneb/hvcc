@@ -1,0 +1,7 @@
+#N canvas 187 299 450 300 10;
+#X obj 8 65 bng 25 250 50 0 empty empty empty 17 7 0 10 -261682 -258113
+-1;
+#X obj 8 41 hoc.cloud 600;
+#X text 7 6 Nuage de bangs;
+#X text 112 41 arg1/inlet1 : temps moyen du cloud en ms;
+#X connect 1 0 0 0;

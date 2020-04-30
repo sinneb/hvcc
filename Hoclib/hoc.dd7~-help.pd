@@ -1,0 +1,28 @@
+#N canvas 261 289 620 356 10;
+#X text -304 4 Digital Delay - imitation Boss DD7;
+#X obj -267 257 dac~;
+#X text -26 74 inlet1 : signal;
+#X text -26 95 inlet3/arg2 : feedback 0-1;
+#X msg 208 46 \; pd dsp 1;
+#X obj 208 23 loadbang;
+#X text -26 84 inlet2/arg1 : time delay 0-2000 ms;
+#X obj -268 106 hoc.play~ samples/sample1.wav;
+#X obj -268 216 *~ 0.3;
+#X obj -268 77 metro 2000;
+#X obj -268 55 loadbang;
+#X obj -204 56 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj -268 185 hoc.dd7~ 300 0.7;
+#X text -26 108 inlet4/arg4 : mode (cf cf. dessous);
+#X text -7 169 mode1 : 50ms;
+#X text -7 180 mode2 : 200ms;
+#X text -7 191 mode3 : 500ms;
+#X text -6 202 mode4 : 3200ms;
+#X connect 5 0 4 0;
+#X connect 7 0 12 0;
+#X connect 8 0 1 0;
+#X connect 8 0 1 1;
+#X connect 9 0 7 0;
+#X connect 10 0 9 0;
+#X connect 11 0 9 0;
+#X connect 12 0 8 0;

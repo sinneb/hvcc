@@ -1,0 +1,15 @@
+#N canvas 201 86 596 307 10;
+#X obj 25 143 h.output~;
+#X obj 26 45 openpanel;
+#X obj 26 24 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 26 96 hoc.looper~ samples/voice.wav;
+#X text 160 43 looper~ just play a sample loop given at parameter or
+via openpanel;
+#X obj 226 77 bng 15 250 50 0 empty empty reset 17 7 0 10 -262144 -1
+-1;
+#X connect 1 0 3 0;
+#X connect 2 0 1 0;
+#X connect 3 0 0 0;
+#X connect 3 0 0 1;
+#X connect 5 0 3 1;

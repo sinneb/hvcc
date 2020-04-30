@@ -1,0 +1,12 @@
+#N canvas 206 214 445 267 10;
+#X obj 17 -72 metro 10;
+#X obj 17 -50 random 100;
+#X obj 17 -28 / 100;
+#X obj 17 9 hoc.show;
+#X obj 16 -93 loadbang;
+#X text 17 -127 Visualiseurs de données en temps réel. Entre 0 et
+1;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;
+#X connect 2 0 3 0;
+#X connect 4 0 0 0;

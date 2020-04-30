@@ -1,0 +1,20 @@
+#N canvas 739 268 409 250 10;
+#X text 146 144 inlet 1 : déclenchement du sample;
+#X text 9 5 Lit des samples wav ou aiff;
+#X obj 10 63 bng 15 250 50 0 empty empty déclenche-moi! 17 7 0 10
+-262144 -1 -1;
+#X text 146 156 arg1/bangInside : chemin du sample;
+#X text 146 168 outlet2 : bang de fin du sample;
+#X obj 245 59 openpanel;
+#X obj 246 41 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 11 138 h.output~;
+#X obj 245 107 bng 15 250 50 0 empty empty end 17 7 0 10 -262144 -1
+-1;
+#X obj 10 83 hoc.play~ samples/bigbuckbunny.wav;
+#X connect 2 0 9 0;
+#X connect 5 0 9 1;
+#X connect 6 0 5 0;
+#X connect 9 0 7 0;
+#X connect 9 0 7 1;
+#X connect 9 1 8 0;

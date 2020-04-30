@@ -1,0 +1,23 @@
+#N canvas 432 92 450 300 10;
+#X obj 11 278 dac~;
+#X obj 11 31 bng 15 250 50 0 empty empty déclenche-moi! 17 7 0 10
+-262144 -1 -1;
+#X obj 11 224 hoc.vocoder~, f 19;
+#X obj 140 181 mtof;
+#X obj 140 137 random 20;
+#X obj 140 159 + 5, f 4;
+#X obj 140 116 metro 500;
+#X obj 140 95 loadbang;
+#X obj 11 52 hoc.play~ samples/voice.wav;
+#X obj 140 203 hoc.square~ 70;
+#X connect 1 0 8 0;
+#X connect 2 0 0 0;
+#X connect 2 0 0 1;
+#X connect 3 0 9 0;
+#X connect 4 0 5 0;
+#X connect 5 0 3 0;
+#X connect 6 0 4 0;
+#X connect 7 0 6 0;
+#X connect 8 0 2 0;
+#X connect 8 1 1 0;
+#X connect 9 0 2 1;

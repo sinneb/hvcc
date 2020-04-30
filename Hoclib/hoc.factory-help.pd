@@ -1,0 +1,5 @@
+#N canvas 564 238 497 365 10;
+#X obj 197 162 namecanvas my-canvas;
+#X obj 197 137 hoc.factory my-canvas osc~ 3;
+#X text 12 12 hoc.factory : crée des objets dynamiquement;
+#X text 12 27 Doit être utilisé conjointement avec namecanvas;

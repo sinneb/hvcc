@@ -1,0 +1,10 @@
+#N canvas 494 398 329 184 10;
+#X floatatom 20 98 5 0 0 0 - - -, f 5;
+#X floatatom 20 48 5 0 0 0 - - -, f 5;
+#X obj 87 44 bng 15 250 50 0 empty empty reset 17 7 0 10 -262144 -1
+-1;
+#X obj 20 71 hoc.lesser;
+#X text 17 12 Renvoie la valeur minimale;
+#X connect 1 0 3 0;
+#X connect 2 0 3 1;
+#X connect 3 0 0 0;

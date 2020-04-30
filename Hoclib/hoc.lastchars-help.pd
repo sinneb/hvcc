@@ -1,0 +1,10 @@
+#N canvas 145 59 302 177 10;
+#X obj 10 96 hoc.lastchars 5;
+#X msg 10 51 abcdefghijklmnopqrstuvwxyz;
+#X symbolatom 10 118 10 0 0 0 - - -, f 10;
+#X obj 10 73 prepend symbol;
+#X text 8 29 first arg: number of chars to keep;
+#X text 9 15 Keeps the last chars of a symbol;
+#X connect 0 0 2 0;
+#X connect 1 0 3 0;
+#X connect 3 0 0 0;

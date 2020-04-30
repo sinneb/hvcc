@@ -1,0 +1,13 @@
+#N canvas 197 282 516 415 10;
+#X text 11 6 Simple Waveshaper;
+#X obj 35 59 osc~ 220;
+#X obj 35 92 hoc.waveshaper~;
+#X obj 36 278 h.output~;
+#X obj 35 237 *~ 0.1;
+#X obj 168 68 bng 15 250 50 0 empty empty reset 17 7 0 10 -262144 -1
+-1;
+#X connect 1 0 2 0;
+#X connect 2 0 4 0;
+#X connect 4 0 3 0;
+#X connect 4 0 3 1;
+#X connect 5 0 2 1;

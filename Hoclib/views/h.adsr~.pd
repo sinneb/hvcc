@@ -1,0 +1,32 @@
+#N canvas 109 146 450 300 10;
+#X obj 48 194 hoc.adsr~;
+#X obj 105 114 vsl 10 50 0.05 500 0 0 empty empty A 2 20 0 10 -261234
+-258113 -86277 196 1;
+#X obj 115 114 vsl 10 50 0.001 500 0 0 empty empty D 2 20 0 10 -261234
+-258113 -86277 588 1;
+#X obj 125 114 vsl 10 50 0 1 0 0 empty empty S 2 20 0 10 -261234 -258113
+-86277 1470 1;
+#X obj 135 114 vsl 10 50 0.001 500 0 0 empty empty R 2 20 0 10 -261234
+-258113 -86277 980 1;
+#X obj 36 92 inlet;
+#X obj 46 239 outlet~;
+#X obj 196 117 loadbang;
+#X msg 168 146 20;
+#X msg 203 146 60;
+#X msg 235 146 0.3;
+#X msg 268 147 100;
+#X connect 0 0 6 0;
+#X connect 1 0 0 1;
+#X connect 2 0 0 2;
+#X connect 3 0 0 3;
+#X connect 4 0 0 4;
+#X connect 5 0 0 0;
+#X connect 7 0 8 0;
+#X connect 7 0 9 0;
+#X connect 7 0 10 0;
+#X connect 7 0 11 0;
+#X connect 8 0 1 0;
+#X connect 9 0 2 0;
+#X connect 10 0 3 0;
+#X connect 11 0 4 0;
+#X coords 0 -1 1 1 50 70 1 100 100;

@@ -1,0 +1,18 @@
+#N canvas 77 352 450 300 10;
+#X obj 34 183 hoc.karpluck~;
+#X obj 107 119 hsl 70 10 0 1 0 0 empty empty width_noise 0 5 1 10 -261234
+-258113 -86277 0 1;
+#X obj 107 132 hsl 70 10 1 1 0 0 empty empty decay 0 5 1 10 -261234
+-258113 -86277 0 1;
+#X obj 107 145 hsl 70 10 20 120 0 0 empty empty cutoff 0 5 1 10 -261234
+-258113 -86277 0 1;
+#X obj 28 103 inlet;
+#X obj 33 220 outlet~;
+#X obj 122 162 mtof;
+#X connect 0 0 5 0;
+#X connect 1 0 0 1;
+#X connect 2 0 0 2;
+#X connect 3 0 6 0;
+#X connect 4 0 0 0;
+#X connect 6 0 0 3;
+#X coords 0 -1 1 1 85 60 1 100 100;

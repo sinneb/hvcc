@@ -1,0 +1,25 @@
+#N canvas 583 344 527 224 10;
+#X floatatom 14 41 5 -10 10 0 - - -, f 5;
+#X floatatom 14 83 5 0 0 0 - - -, f 5;
+#X text 5 0 outil de mapping (utilisé dans Max) de conversion d'echelles
+;
+#X obj 14 61 hoc.scale -10 10 0 127;
+#X obj 18 112 hsl 128 15 -10 10 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X obj 18 163 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X obj 15 137 hoc.scale -10 10 0 127 2;
+#X obj 200 111 hsl 128 15 -10 10 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X obj 200 162 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X obj 197 136 hoc.scale -10 10 0 127 -2;
+#X text 186 36 arg1->arg2/inlet2->inlet3 : echelle en entrée;
+#X text 187 50 arg3->arg4/inlet4->inlet5 : echelle en sortie;
+#X text 188 68 arg5/inlet6 : courbe de transfert (puissance);
+#X connect 0 0 3 0;
+#X connect 3 0 1 0;
+#X connect 4 0 6 0;
+#X connect 6 0 5 0;
+#X connect 7 0 9 0;
+#X connect 9 0 8 0;

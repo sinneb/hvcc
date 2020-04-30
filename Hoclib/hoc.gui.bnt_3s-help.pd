@@ -1,0 +1,6 @@
+#N canvas 571 294 450 300 10;
+#X obj 35 63 hoc.bnt_3s;
+#X text 29 26 3 states button;
+#X floatatom 35 88 5 0 0 0 - - -, f 5;
+#X text 55 62 click!;
+#X connect 0 0 2 0;

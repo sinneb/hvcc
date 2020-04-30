@@ -1,0 +1,24 @@
+#N canvas 28 30 450 300 10;
+#X obj 17 134 hoc.bitcrusher~;
+#X obj 16 160 outlet~;
+#X obj 58 82 hsl 75 10 80 44100 1 0 empty empty Samplerate 0 5 1 10
+-232576 -159808 -45076 4930 1;
+#X obj 58 69 hsl 75 10 1 16 1 0 empty empty bitdepth 0 5 1 10 -232576
+-159808 -45076 88 1;
+#X obj 16 9 inlet~;
+#X msg 144 62 8;
+#X msg 143 82 22100;
+#X obj 165 23 loadbang;
+#X obj 74 11 inlet;
+#X obj 118 12 inlet;
+#X connect 0 0 1 0;
+#X connect 2 0 0 2;
+#X connect 3 0 0 1;
+#X connect 4 0 0 0;
+#X connect 5 0 3 0;
+#X connect 6 0 2 0;
+#X connect 7 0 5 0;
+#X connect 7 0 6 0;
+#X connect 8 0 3 0;
+#X connect 9 0 2 0;
+#X coords 0 -1 1 1 90 45 1 50 50;

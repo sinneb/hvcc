@@ -1,0 +1,31 @@
+#N canvas 131 208 450 300 10;
+#X obj 77 197 hoc.retrigger2~;
+#X obj 77 253 outlet~;
+#X obj 129 166 f;
+#X obj 105 93 hsl 70 10 -5 7 0 0 empty empty frequence 0 5 1 10 -232576
+-159808 -45076 1275 1;
+#X obj 105 83 hsl 70 10 1 1000 0 0 empty empty time 0 5 1 10 -232576
+-159808 -45076 5265 1;
+#X obj 178 83 bng 20 250 50 0 empty empty empty 17 7 0 10 -232576 -159808
+-45076;
+#X obj 11 117 inlet~;
+#X obj 253 82 loadbang;
+#X msg 253 104 0;
+#X msg 111 32 300;
+#X obj 194 22 inlet;
+#X obj 238 22 inlet;
+#X obj 282 22 inlet;
+#X connect 0 0 1 0;
+#X connect 2 0 0 1;
+#X connect 3 0 0 2;
+#X connect 4 0 2 1;
+#X connect 5 0 2 0;
+#X connect 6 0 0 0;
+#X connect 7 0 8 0;
+#X connect 7 0 9 0;
+#X connect 8 0 3 0;
+#X connect 9 0 4 0;
+#X connect 10 0 4 0;
+#X connect 11 0 3 0;
+#X connect 12 0 5 0;
+#X coords 0 -1 1 1 100 35 1 100 70;

@@ -1,0 +1,17 @@
+#N canvas 255 153 450 300 10;
+#X obj 105 193 hoc.granulator~ 8;
+#X obj 192 103 bng 15 250 50 0 empty empty empty 17 7 0 10 -261234
+-258113 -86277;
+#X obj 105 119 hsl 100 10 0 1 0 0 empty empty random_pos 0 5 1 10 -261234
+-258113 -86277 9400 1;
+#X obj 105 130 hsl 100 10 1 500 0 0 empty empty duration 0 5 1 10 -261234
+-258113 -86277 1400 1;
+#X obj 105 229 outlet~;
+#X obj 105 141 hsl 100 10 0 1 0 0 empty empty window_width 0 5 1 10
+-261234 -258113 -86277 9900 1;
+#X connect 0 0 4 0;
+#X connect 1 0 0 3;
+#X connect 2 0 0 1;
+#X connect 3 0 0 0;
+#X connect 5 0 0 2;
+#X coords 0 -1 1 1 110 52 1 100 100;

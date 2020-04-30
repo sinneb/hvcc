@@ -1,0 +1,23 @@
+#N canvas 227 300 557 339 10;
+#X obj 30 216 dac~;
+#X obj 29 102 pack f f;
+#X text 11 -5 Modele physique de karplus strong;
+#X text 94 196 ref : http://blog.loomer.co.uk/2010/02/karplus-strong-guitar-string-synthesis.html
+;
+#X text 265 69 inlet2/arg2 : decay;
+#X text 266 58 inlet1/arg1 : width;
+#X text 265 81 inlet2/arg2 : cutoff;
+#X obj 29 77 hoc.midi.random 120 30 60;
+#X obj 29 165 hoc.karpluck~ 0.1 0.5 2000;
+#X obj 151 123 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 7500 1;
+#X obj 254 165 mtof;
+#X floatatom 254 148 5 0 0 0 - - -, f 5;
+#X connect 1 0 8 0;
+#X connect 7 0 1 0;
+#X connect 7 1 1 1;
+#X connect 8 0 0 0;
+#X connect 8 0 0 1;
+#X connect 9 0 8 2;
+#X connect 10 0 8 3;
+#X connect 11 0 10 0;

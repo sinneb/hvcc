@@ -1,0 +1,16 @@
+#N canvas 451 329 450 300 10;
+#X obj 10 63 bng 15 250 50 0 empty empty déclenche-moi! 17 7 0 10
+-262144 -1 -1;
+#X obj 10 86 hoc.play~ samples/bigbuckbunny.wav;
+#X obj 8 155 dac~;
+#X obj 10 40 loadbang;
+#X obj 9 123 hoc.ringmod~ 120;
+#X text 150 126 inlet1 : signal;
+#X text 150 139 inlet2/arg1 : frequence;
+#X text 7 11 Simple modulation en anneau;
+#X connect 0 0 1 0;
+#X connect 1 0 4 0;
+#X connect 1 1 0 0;
+#X connect 3 0 0 0;
+#X connect 4 0 2 0;
+#X connect 4 0 2 1;

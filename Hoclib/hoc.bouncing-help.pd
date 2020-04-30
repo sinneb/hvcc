@@ -1,0 +1,18 @@
+#N canvas 164 331 586 323 10;
+#X obj 26 224 h.output~;
+#X obj 25 151 hoc.play~ ./samples/sample1.wav;
+#X obj 25 99 hoc.bouncing 2000;
+#X obj 25 70 bng 15 250 50 0 empty empty play! 17 7 0 10 -262144 -1
+-1;
+#X obj 25 186 *~;
+#X text 22 15 Simule une balle rebondissante;
+#X text 179 70 inlet1 : play (bang);
+#X text 179 85 inlet2/arg1 : temps en ms (defaut&min: 150);
+#X text 180 113 outlet1 : bangs;
+#X text 180 126 outlet1 : volume;
+#X connect 1 0 4 0;
+#X connect 2 0 1 0;
+#X connect 2 1 4 1;
+#X connect 3 0 2 0;
+#X connect 4 0 0 0;
+#X connect 4 0 0 1;

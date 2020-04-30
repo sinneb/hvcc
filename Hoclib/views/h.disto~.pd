@@ -1,0 +1,12 @@
+#N canvas 132 354 450 300 10;
+#X obj 24 160 hoc.disto~;
+#X obj 195 38 inlet disto;
+#X obj 23 67 inlet~;
+#X obj 24 209 outlet~;
+#X obj 108 115 hsl 70 10 0 1 0 0 empty empty disto 0 5 1 10 -232576
+-159808 -45076 0 1;
+#X connect 0 0 3 0;
+#X connect 1 0 4 0;
+#X connect 2 0 0 0;
+#X connect 4 0 0 1;
+#X coords 0 -1 1 1 85 30 1 100 100;

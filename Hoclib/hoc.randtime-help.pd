@@ -1,0 +1,11 @@
+#N canvas 76 319 450 300 10;
+#X obj 26 131 bng 15 100 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X text 13 12 hoc.randtime : outputs bangs within a random range time
+;
+#X obj 26 108 hoc.randtime 1 5;
+#X text 140 60 inlet1/arg1: minimum time in seconds;
+#X text 140 73 inlet2/arg2: maximum time in seconds;
+#X obj 48 130 print;
+#X connect 2 0 0 0;
+#X connect 2 0 5 0;

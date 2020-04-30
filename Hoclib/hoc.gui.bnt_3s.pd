@@ -1,0 +1,38 @@
+#N canvas 181 29 622 402 10;
+#X msg 110 298 \; \$1-cnvR color \$2 \$3 \$4;
+#X obj 110 275 pack \$0 f f f;
+#X msg 159 251 0;
+#X obj 119 225 t b f b;
+#X obj 101 166 sel 0 1 2;
+#X obj 129 122 + 1;
+#X obj 101 144 % 3;
+#X obj 100 100 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 39 207 outlet;
+#X obj 101 101 cnv 13 13 13 \$0-cnvS \$0-cnvR empty 20 12 0 14 -262144
+-262144 0;
+#X msg 100 190 0;
+#X msg 131 191 1;
+#X msg 163 191 2;
+#X obj 205 82 inlet;
+#X obj 101 122 f 1;
+#X connect 1 0 0 0;
+#X connect 2 0 1 2;
+#X connect 2 0 1 3;
+#X connect 3 0 1 0;
+#X connect 3 1 1 1;
+#X connect 3 2 2 0;
+#X connect 4 0 10 0;
+#X connect 4 1 11 0;
+#X connect 4 2 12 0;
+#X connect 5 0 14 1;
+#X connect 6 0 4 0;
+#X connect 6 0 8 0;
+#X connect 7 0 14 0;
+#X connect 10 0 3 0;
+#X connect 11 0 3 0;
+#X connect 12 0 3 0;
+#X connect 13 0 4 0;
+#X connect 14 0 5 0;
+#X connect 14 0 6 0;
+#X coords 0 -1 1 1 15 15 2 100 100;

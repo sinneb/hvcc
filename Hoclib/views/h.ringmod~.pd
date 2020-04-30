@@ -1,0 +1,12 @@
+#N canvas 189 381 450 300 10;
+#X obj 34 177 hoc.ringmod~;
+#X obj 106 116 hsl 70 10 10 2000 0 0 empty empty freq 0 5 1 10 -232576
+-159808 -45076 6900 1;
+#X obj 34 99 inlet~;
+#X obj 35 218 outlet~;
+#X obj 213 79 inlet;
+#X connect 0 0 3 0;
+#X connect 1 0 0 1;
+#X connect 2 0 0 0;
+#X connect 4 0 1 0;
+#X coords 0 -1 1 1 85 30 1 100 100;

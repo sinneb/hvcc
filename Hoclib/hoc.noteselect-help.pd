@@ -1,0 +1,10 @@
+#N canvas 246 274 450 300 10;
+#X text 12 6 selctionne une note du midiin;
+#X text 9 101 note;
+#X text 42 101 midi;
+#X text 10 121 C3 : 48 : 130.81;
+#X text 10 132 C4 : 60 : 261.63;
+#X text 10 142 A4 : 69 : 440;
+#X text 74 101 frequence;
+#X obj 15 34 hoc.noteselect 69;
+#X text 144 35 arg1 : numero de note midi;

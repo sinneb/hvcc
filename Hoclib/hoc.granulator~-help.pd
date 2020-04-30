@@ -1,0 +1,18 @@
+#N canvas 139 178 450 300 10;
+#X obj 22 208 h.output~;
+#X floatatom 22 71 5 0 0 2 size - -, f 5;
+#X text 17 16 Granulator;
+#X obj 63 49 hsl 128 15 0 1 0 0 empty empty random_pos -2 8 0 10 -262144
+-1 -1 12700 1;
+#X text 177 112 Arg1 : number of grains;
+#X obj 102 71 hsl 128 15 0 1 0 0 empty empty window_size -2 8 0 10
+-262144 -1 -1 1300 1;
+#X obj 22 91 hoc.granulator~ 8;
+#X obj 138 28 bng 15 250 50 0 empty empty open 17 7 0 10 -262144 -1
+-1;
+#X connect 1 0 6 0;
+#X connect 3 0 6 1;
+#X connect 5 0 6 2;
+#X connect 6 0 0 0;
+#X connect 6 0 0 1;
+#X connect 7 0 6 3;

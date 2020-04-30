@@ -1,0 +1,14 @@
+#N canvas 2 31 450 300 10;
+#X obj 15 100 hoc.sampler~;
+#X text 11 8 Sampler 4 voix;
+#X obj 15 49 hoc.midi.random 300 60 80;
+#X obj 15 71 pack f f;
+#X obj 15 141 h.output~;
+#X text 231 77 inlet2: chemin du son;
+#X msg 105 78 samples/voice.wav;
+#X connect 0 0 4 0;
+#X connect 0 0 4 1;
+#X connect 2 0 3 0;
+#X connect 2 1 3 1;
+#X connect 3 0 0 0;
+#X connect 6 0 0 1;

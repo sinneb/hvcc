@@ -1,0 +1,10 @@
+#N canvas 70 424 428 163 10;
+#X text 10 7 NRPN Encoder;
+#X text 202 73 arg1: LSB (defaut:0);
+#X text 202 59 arg1: MSB (defaut:0);
+#X obj 11 60 hoc.nrpn 48;
+#X obj 14 38 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 900 1;
+#X obj 11 86 print CC;
+#X connect 3 0 5 0;
+#X connect 4 0 3 0;

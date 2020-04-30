@@ -1,0 +1,16 @@
+#N canvas 0 29 520 313 10;
+#X obj 12 115 / 100;
+#X obj 12 72 metro 10;
+#X obj 12 94 random 50;
+#X obj 125 214 hoc.show;
+#X obj 127 175 hoc.autoscale 1000;
+#X obj 12 51 loadbang;
+#X obj 12 213 hoc.show;
+#X text 7 6 Scale automatique des valeurs;
+#X text 99 126 arg1/inlet1 : rafraichissement en ms (defaut 1000);
+#X connect 0 0 4 0;
+#X connect 0 0 6 0;
+#X connect 1 0 2 0;
+#X connect 2 0 0 0;
+#X connect 4 0 3 0;
+#X connect 5 0 1 0;

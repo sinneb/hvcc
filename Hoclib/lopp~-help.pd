@@ -1,0 +1,13 @@
+#N canvas 216 264 450 300 10;
+#X obj 15 75 lopp~ 300;
+#X obj 14 51 noise~;
+#X obj 15 107 dac~;
+#X text 9 4 2nd ordre low pass;
+#X msg 141 64 \; pd dsp 1;
+#X obj 141 43 loadbang;
+#X text 93 103 inlet1: signal;
+#X text 93 115 inlet2/arg1: frequence;
+#X connect 0 0 2 0;
+#X connect 0 0 2 1;
+#X connect 1 0 0 0;
+#X connect 5 0 4 0;
